@@ -106,27 +106,32 @@ $("#plotvalue").click(function() {
 	var k = $("textarea").val();
 	if (/^-?[\d.]+(?:e-?\d+)?$/.test(k)) {
 		var binary = new BigNumber(k, 10);
-		binary = binary.dividedBy(17);
-		binary.toFormat(2);
-		binary = binary.toString(2);
-		var b = binary.length - 1;
+		if (binary.modulo(17) == 0) {
+			binary = binary.dividedBy(17);
+			binary.toFormat(2);
+			binary = binary.toString(2);
+			var b = binary.length - 1;
 
-		for (var i = xPixels - 1; i >= 0; i--) {
-			for (var j = 0; j < yPixels; j++) {
-				if (binary[b] == 0 || b < 0) {
-					context.fillStyle = emptyColor;
-					plot[i][j][0] = 0;
-				}else if (binary[b] = 1) {
-					context.fillStyle = fillColor;
-					plot[i][j][0] = 1;
-				}
+			for (var i = xPixels - 1; i >= 0; i--) {
+				for (var j = 0; j < yPixels; j++) {
+					if (binary[b] == 0 || b < 0) {
+						context.fillStyle = emptyColor;
+						plot[i][j][0] = 0;
+					}else if (binary[b] = 1) {
+						context.fillStyle = fillColor;
+						plot[i][j][0] = 1;
+					}
 
-				if (b >= 0) {
-					b--;	
+					if (b >= 0) {
+						b--;	
+					}
+					context.fillRect(plot[i][j][1],plot[i][j][2],plot[i][j][3],plot[i][j][4]);
 				}
-				context.fillRect(plot[i][j][1],plot[i][j][2],plot[i][j][3],plot[i][j][4]);
 			}
+		}else {
+			alert("Value not dividable by 17");
 		}
+		
 	}
 });
 
