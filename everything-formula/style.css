@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900);
+
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box; 
+  	-moz-box-sizing: border-box;    
+  	box-sizing: border-box;
+  	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #1B1B19; 
+    
+}
+
+h1 {
+	color: #27ae60;
+	letter-spacing: 0.5px;
+}
+
+a {color: #454540;}
+
+a:hover {color: #27ae60;}
+
+button {
+	text-align: left;
+	background: transparent;
+	outline: none;
+	border: 2px solid #27ae60;
+	padding: 7px;
+	border-radius: 3px;
+	color: #27ae60;
+	cursor: pointer;
+	margin: 20px 0px 0px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+button:hover {
+	color: #2A2A2A;
+	background-color: #27ae60;
+}
+#calcvalue {margin-left: 10px;}
+#clear {float: right;}
+
+textarea {
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+	min-height: 190px;
+	background-color: #ecf0f1;
+	padding: 7px;
+	outline: none;
+	resize:vertical;
+}
+
+#hcenter {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#vcenter {
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+}
+
+#canvas {
+  cursor: pointer;
+  background-color: #454540;
+  border: 2px solid #454540;
+  margin-bottom: -4px;
+  margin-top: 20px;
+}
+
