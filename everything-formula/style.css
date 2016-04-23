@@ -14,36 +14,40 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #1B1B19; 
+    background: #FFFFFF; 
     
 }
 
 h1 {
-	color: #27ae60;
+	color: #111111;
 	letter-spacing: 0.5px;
 }
 
-a {color: #454540;}
+a {color: #666666;}
 
-a:hover {color: #27ae60;}
+a:hover {color: #111111;}
 
 button {
 	text-align: left;
 	background: transparent;
 	outline: none;
-	border: 2px solid #27ae60;
-	padding: 7px;
+	border: 2px solid #111111;
+	padding: 10px;
 	border-radius: 3px;
-	color: #27ae60;
+	color: #111111;
 	cursor: pointer;
 	margin: 20px 0px 0px;
 	letter-spacing: 1px;
 	font-weight: 700;
+	-webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
 }
 
 button:hover {
-	color: #2A2A2A;
-	background-color: #27ae60;
+	color: #FFFFFF;
+	background-color: #111111;
 }
 #calcvalue {margin-left: 10px;}
 #clear {float: right;}
@@ -52,7 +56,8 @@ textarea {
 	margin: 20px 0px 20px 0px;
 	width: 100%;
 	min-height: 190px;
-	background-color: #ecf0f1;
+	background-color: #FFFFFF;
+	border: 1px solid #A9A9A9;
 	padding: 7px;
 	outline: none;
 	resize:vertical;
@@ -72,8 +77,8 @@ textarea {
 
 #canvas {
   cursor: pointer;
-  background-color: #454540;
-  border: 2px solid #454540;
+  background-color: #A9A9A9;
+  border: 1px solid #A9A9A9;
   margin-bottom: -4px;
   margin-top: 20px;
 }
