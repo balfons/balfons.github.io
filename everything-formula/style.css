@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900);
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
 
 * {
 	margin: 0px;
@@ -6,23 +7,31 @@
 	-webkit-box-sizing: border-box; 
   	-moz-box-sizing: border-box;    
   	box-sizing: border-box;
-  	font-family: 'Roboto', sans-serif;
 }
 
 body {
 	display: table;
     position: absolute;
+    font-size: 1rem;
+    line-height: 1.5;
     height: 100%;
     width: 100%;
-    background: #FFFFFF; 
+    background: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
 	color: #111111;
 	letter-spacing: 0.5px;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size: 2.4rem;
 }
 
-a {color: #666666;}
+a {
+	color: #666666;
+	font-weight: 600;
+}
 
 a:hover {color: #111111;}
 
@@ -33,11 +42,13 @@ button {
 	border: 2px solid #111111;
 	padding: 10px;
 	border-radius: 3px;
+	font-family: inherit;
+	text-transform: uppercase;
 	color: #111111;
 	cursor: pointer;
-	margin: 20px 0px 0px;
-	letter-spacing: 1px;
+	margin: 2em 0 0;
 	font-weight: 700;
+	letter-spacing: 0.2px;
 	-webkit-transition: all ease-in-out 0.15s;
     -moz-transition: all ease-in-out 0.15s;
     -o-transition: all ease-in-out 0.15s;
@@ -48,11 +59,22 @@ button:hover {
 	color: #FFFFFF;
 	background-color: #111111;
 }
+
+button.clear {
+	border: 2px solid #E53935;
+	color: #E53935;
+}
+
+button.clear:hover {
+	color: #FFFFFF;
+	background-color: #E53935;
+}
+
 #calcvalue {margin-left: 10px;}
 #clear {float: right;}
 
 textarea {
-	margin: 20px 0px 20px 0px;
+	margin: 2em 0;
 	width: 100%;
 	min-height: 190px;
 	background-color: #FFFFFF;
@@ -71,7 +93,7 @@ textarea {
 #vcenter {
 	display: inline-block;
 	text-align: left;
-	padding: 20px;
+	padding: 2em;
 }
 
 #canvas {
@@ -79,6 +101,6 @@ textarea {
   background-color: #A9A9A9;
   border: 1px solid #A9A9A9;
   margin-bottom: -4px;
-  margin-top: 20px;
+  margin-top: 2em;
 }
 
