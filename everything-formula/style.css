@@ -70,6 +70,8 @@ button.clear:hover {
 	background-color: #E53935;
 }
 
+span {padding-left: 10px;}
+
 #calcvalue {margin-left: 10px;}
 #clear {float: right;}
 
